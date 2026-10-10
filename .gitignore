@@ -1,0 +1,7 @@
+node_modules/
+.wrangler/
+.env
+.env.*
+*.log
+screenshot*.png
+ghl_login_screen.png

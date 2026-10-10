@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media AI GigaKit — O Arsenal Definitivo de Criação, Montagem & Prospecção com IA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              emerald: '#1cd49e',
+              glow: '#69e6c2',
+              dark: '#030b0d',
+              surface: '#071e22',
+              card: '#0a292f',
+              border: '#14383d',
+              accent: '#00f5a0'
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          animation: {
+            'marquee': 'marquee 25s linear infinite',
+            'pulse-fast': 'pulse 1.2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            marquee: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-50%)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #030b0d;
+      color: #e2e8f0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glow-border {
+      box-shadow: 0 0 30px rgba(28, 212, 158, 0.18);
+    }
+    .glow-badge {
+      box-shadow: 0 0 15px rgba(105, 230, 194, 0.3);
+    }
+    .neon-text {
+      text-shadow: 0 0 20px rgba(105, 230, 194, 0.4);
+    }
+    .pipeline-step:hover .pipeline-number {
+      background-color: #1cd49e;
+      color: #030b0d;
+      box-shadow: 0 0 15px rgba(28, 212, 158, 0.5);
+    }
+  </style>
+</head>
+<body class="bg-[#030b0d] text-slate-200 antialiased selection:bg-brand-emerald selection:text-black">
+
+  <!-- BARRA DE TOPO & SELETOR DE IDIOMA -->
+  <div class="bg-gradient-to-r from-emerald-950 via-teal-900 to-emerald-950 border-b border-brand-border py-2.5 px-4 text-center text-xs sm:text-sm font-medium tracking-wide flex items-center justify-between max-w-7xl mx-auto">
+    <div class="flex items-center space-x-2 mx-auto sm:mx-0">
+      <span class="flex h-2 w-2 relative">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-emerald opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-accent"></span>
+      </span>
+      <span class="text-slate-300">LOTE FUNDADOR LIBERADO: <strong>Vault Completo + Grupo VIP WhatsApp & Facebook</strong>. Mentoria 1:1 limitada a 5 vagas.</span>
+    </div>
+    
+    <div class="hidden sm:flex items-center space-x-2 text-xs font-mono">
+      <a href="/" class="px-2.5 py-1 rounded bg-brand-emerald text-black font-bold">PT</a>
+      <a href="/en.html" class="px-2.5 py-1 rounded bg-slate-800 text-slate-300 hover:text-white font-medium">EN</a>
+    </div>
+  </div>
+
+  <!-- NAVEGAÇÃO COM LOGO AUTOMATRIX -->
+  <header class="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between border-b border-brand-border/40">
+    <div class="flex items-center space-x-3">
+      <img src="/automatrix-logo.svg" alt="Automatrix IA Logo" class="w-11 h-11 rounded-2xl shadow-lg shadow-brand-emerald/25">
+      <div>
+        <div class="font-extrabold tracking-tight text-white text-lg sm:text-xl flex items-center gap-1.5">
+          Social Media AI <span class="text-brand-emerald">GigaKit</span>
+        </div>
+        <div class="text-[10px] tracking-widest text-slate-400 uppercase font-mono">by Lucas / Automatrix IA</div>
+      </div>
+    </div>
+    <div class="hidden lg:flex items-center space-x-6 text-sm text-slate-400 font-medium">
+      <a href="#ia-engine" class="hover:text-brand-glow transition">Motor de Vídeo</a>
+      <a href="#avatar-remake" class="hover:text-brand-glow transition">Avatar Remake</a>
+      <a href="#crm-engine" class="hover:text-brand-glow transition">Distribuição CRM</a>
+      <a href="#prova" class="hover:text-brand-glow transition">Reels Virais</a>
+      <a href="#metricas" class="hover:text-brand-glow transition">Métricas</a>
+      <a href="#gringa-engine" class="hover:text-brand-glow transition">Clientes Gringos</a>
+      <a href="#diagnostico" class="hover:text-brand-glow transition">Diagnóstico</a>
+      <a href="#precos" class="hover:text-brand-glow transition">Planos</a>
+    </div>
+    <div class="flex items-center space-x-3">
+      <a href="#precos" class="bg-brand-emerald hover:bg-brand-accent text-slate-950 font-bold px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm transition duration-200 transform hover:-translate-y-0.5 shadow-lg shadow-brand-emerald/25">
+        Acessar o Kit
+      </a>
+    </div>
+  </header>
+
+  <!-- ELEMENTO VISUAL 1: SIMULADOR VISUAL DE IA EDITANDO VÍDEO AUTOMATICAMENTE -->
+  <section id="ia-engine" class="max-w-7xl mx-auto px-4 pt-8">
+    <div class="bg-brand-card/90 border border-brand-border rounded-2xl p-4 sm:p-5 glow-border relative overflow-hidden backdrop-blur-md">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-brand-border/60 pb-3 mb-4">
+        <div class="flex items-center space-x-3">
+          <span class="flex h-3 w-3 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+          </span>
+          <span class="text-xs font-mono font-bold text-white uppercase tracking-wider">
+            [AUTOMATION CORE] PIPELINE DE MONTAGEM E RITMO COM IA EM TEMPO REAL
+          </span>
+        </div>
+        <div class="flex items-center space-x-4 text-xs font-mono text-slate-400">
+          <span class="text-brand-glow">BPM SYNC: 128.4 · CUT-ON-BEAT</span>
+          <span class="hidden sm:inline">ASSEMBLY ENGINE: OPENMONTAGE + REMOTION</span>
+          <span class="text-brand-emerald font-bold">RENDER: 0.0s (HEADLESS)</span>
+        </div>
+      </div>
+
+      <!-- TIMELINE SIMULADA COM ELEMENTOS DE VÍDEO -->
+      <div class="grid lg:grid-cols-12 gap-4 items-center">
+        <!-- PREVIEW DO VÍDEO VERTICAL 9:16 -->
+        <div class="lg:col-span-4 bg-black rounded-xl border border-slate-800 p-2 relative overflow-hidden flex items-center justify-center aspect-[9/14] sm:aspect-[9/13] max-h-[380px] mx-auto w-full max-w-[260px]">
+          <img src="/automatrix-video-player-preview.gif" alt="AI Video Preview" class="w-full h-full object-cover rounded-lg">
+          <div class="absolute top-4 left-4 bg-black/70 backdrop-blur-sm border border-brand-emerald/40 text-[10px] font-mono text-brand-emerald px-2 py-0.5 rounded">
+            REC ● 00:04.12
+          </div>
+          <!-- SUBTITLE HIGHLIGHT OVERLAY -->
+          <div class="absolute bottom-8 inset-x-3 text-center bg-black/80 backdrop-blur-md p-2 rounded-lg border border-yellow-400/40">
+            <span class="text-xs font-extrabold text-white tracking-wide uppercase">
+              "ESSE REPO DISPENSA QUALQUER <span class="text-yellow-400 bg-yellow-400/20 px-1 rounded">TOOL PAGA"</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- PAINEL DE TIMELINE & CAMADAS DE ÁUDIO -->
+        <div class="lg:col-span-8 space-y-3 font-mono text-xs">
+          <!-- FAIXA 1: VÍDEO GERADO (HEYGEN + WAN 2.1) -->
+          <div class="bg-brand-surface p-3 rounded-xl border border-brand-border flex items-center justify-between">
+            <div class="flex items-center space-x-2.5">
+              <span class="text-purple-400 font-bold">V1</span>
+              <span class="text-slate-300">AI Video Generation Track (HeyGen Cloned Avatar + Google Flow)</span>
+            </div>
+            <span class="text-[10px] text-brand-emerald bg-brand-emerald/10 px-2 py-0.5 rounded border border-brand-emerald/20">100% LIP-SYNC</span>
+          </div>
+
+          <!-- FAIXA 2: B-ROLLS DINÂMICOS & ZOOM HIGHLIGHT -->
+          <div class="bg-brand-surface p-3 rounded-xl border border-brand-border flex items-center justify-between">
+            <div class="flex items-center space-x-2.5">
+              <span class="text-blue-400 font-bold">V2</span>
+              <span class="text-slate-300">Dynamic B-Roll Sweep (Hyperframes News Zoom + GitHub UI)</span>
+            </div>
+            <span class="text-[10px] text-blue-400 bg-blue-400/10 px-2 py-0.5 rounded border border-blue-400/20">SPRING MOTION 60FPS</span>
+          </div>
+
+          <!-- FAIXA 3: LEGENDAS VIRAL LAB QUEIMADAS -->
+          <div class="bg-brand-surface p-3 rounded-xl border border-brand-border flex items-center justify-between">
+            <div class="flex items-center space-x-2.5">
+              <span class="text-yellow-400 font-bold">TXT</span>
+              <span class="text-slate-300">Viral ASS Subtitles (Whisper Transcribe + Word-Level Bounce)</span>
+            </div>
+            <span class="text-[10px] text-yellow-400 bg-yellow-400/10 px-2 py-0.5 rounded border border-yellow-400/20">RETENÇÃO 85%</span>
+          </div>
+
+          <!-- FAIXA 4: ONDA SONORA & BEAT DETECTION -->
+          <div class="bg-brand-surface p-3 rounded-xl border border-brand-border">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center space-x-2.5">
+                <span class="text-red-400 font-bold">A1</span>
+                <span class="text-slate-300">Audio Master & BPM Beatgrid Detection (AssemblyAI + Demucs)</span>
+              </div>
+              <span class="text-brand-glow text-[10px]">00:00 - 00:34</span>
+            </div>
+            <!-- ONDAS DE ÁUDIO SIMULADAS -->
+            <div class="h-6 flex items-center space-x-1 overflow-hidden px-1">
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-4"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-6"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-3"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-5"></span>
+              <span class="w-1 bg-brand-glow rounded animate-pulse h-6"></span>
+              <span class="w-1 bg-brand-glow rounded animate-pulse h-2"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-5"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-4"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-6"></span>
+              <span class="w-1 bg-brand-glow rounded animate-pulse h-3"></span>
+              <span class="w-1 bg-brand-glow rounded animate-pulse h-5"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-6"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-4"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-2"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-6"></span>
+              <span class="w-1 bg-brand-glow rounded animate-pulse h-5"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-6"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-3"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-5"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-6"></span>
+              <span class="w-1 bg-brand-glow rounded animate-pulse h-4"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-6"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-2"></span>
+              <span class="w-1 bg-brand-emerald rounded animate-pulse h-5"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOVO BLOCO ARQUITETURAL DEDICADO: REEL-AVATAR-REMAKE STACK & WORKFLOW -->
+  <section id="avatar-remake" class="max-w-7xl mx-auto px-4 py-16">
+    <div class="bg-gradient-to-br from-brand-surface via-[#05171a] to-brand-surface rounded-3xl border border-brand-border p-6 sm:p-10 glow-border">
+      <div class="max-w-3xl mb-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-950 border border-teal-700/50 text-brand-glow text-xs font-mono font-bold uppercase mb-3">
+          <span>⚡ REPO OFICIAL: MORFEU333 / REEL-AVATAR-REMAKE</span>
+        </div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+          A Stack Completa de CLIs, MCPs e IA para Recriar Reels Virais
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">
+          Como nosso pipeline automatizado ingere um vídeo de alta performance, isola os elementos e regrava com seu avatar no CapCut em minutos:
+        </p>
+      </div>
+
+      <!-- PIPELINE STEP-BY-STEP EM 5 ETAPAS -->
+      <div class="grid md:grid-cols-5 gap-4">
+        
+        <!-- STEP 1 -->
+        <div class="pipeline-step bg-brand-card/70 border border-brand-border rounded-2xl p-4 flex flex-col justify-between transition duration-200 hover:border-brand-emerald">
+          <div>
+            <div class="pipeline-number w-8 h-8 rounded-lg bg-slate-800 text-brand-emerald font-mono font-bold flex items-center justify-center text-xs mb-3 transition">01</div>
+            <h4 class="text-white font-bold text-sm mb-1">Ingestão Nativa</h4>
+            <div class="text-[10px] font-mono text-brand-glow mb-2">CLI: yt-dlp</div>
+            <p class="text-slate-400 text-xs leading-relaxed">Download em resolução nativa sem perda de compressão, extraindo faixas de vídeo e áudio separadas.</p>
+          </div>
+          <div class="mt-4 pt-2 border-t border-slate-800/80 text-[10px] font-mono text-slate-500">INPUT: URL / MP4</div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="pipeline-step bg-brand-card/70 border border-brand-border rounded-2xl p-4 flex flex-col justify-between transition duration-200 hover:border-brand-emerald">
+          <div>
+            <div class="pipeline-number w-8 h-8 rounded-lg bg-slate-800 text-brand-emerald font-mono font-bold flex items-center justify-center text-xs mb-3 transition">02</div>
+            <h4 class="text-white font-bold text-sm mb-1">Transcrição Precisa</h4>
+            <div class="text-[10px] font-mono text-blue-400 mb-2">API: AssemblyAI</div>
+            <p class="text-slate-400 text-xs leading-relaxed">Timestamps palavra por palavra com word-boost técnico (PT-BR + termos em inglês) para alinhamento temporal milimétrico.</p>
+          </div>
+          <div class="mt-4 pt-2 border-t border-slate-800/80 text-[10px] font-mono text-slate-500">TIMESTAMPS: JSON</div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="pipeline-step bg-brand-card/70 border border-brand-border rounded-2xl p-4 flex flex-col justify-between transition duration-200 hover:border-brand-emerald">
+          <div>
+            <div class="pipeline-number w-8 h-8 rounded-lg bg-slate-800 text-brand-emerald font-mono font-bold flex items-center justify-center text-xs mb-3 transition">03</div>
+            <h4 class="text-white font-bold text-sm mb-1">Isolamento Vocal</h4>
+            <div class="text-[10px] font-mono text-red-400 mb-2">Engine: Demucs</div>
+            <p class="text-slate-400 text-xs leading-relaxed">Script <code>separate.py</code> roda nas 24 vCPUs isolando a voz do áudio original e preservando a trilha de fundo sem ruídos.</p>
+          </div>
+          <div class="mt-4 pt-2 border-t border-slate-800/80 text-[10px] font-mono text-slate-500">STEMS: VOCALS / BGM</div>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="pipeline-step bg-brand-card/70 border border-brand-border rounded-2xl p-4 flex flex-col justify-between transition duration-200 hover:border-brand-emerald">
+          <div>
+            <div class="pipeline-number w-8 h-8 rounded-lg bg-slate-800 text-brand-emerald font-mono font-bold flex items-center justify-center text-xs mb-3 transition">04</div>
+            <h4 class="text-white font-bold text-sm mb-1">Avatar Cloned</h4>
+            <div class="text-[10px] font-mono text-purple-400 mb-2">Engine: HeyGen</div>
+            <p class="text-slate-400 text-xs leading-relaxed">Geração do avatar com sincronia labial cirúrgica (Lip-Sync) em alta definição substituindo o criador original.</p>
+          </div>
+          <div class="mt-4 pt-2 border-t border-slate-800/80 text-[10px] font-mono text-slate-500">RENDER: CLOUD API</div>
+        </div>
+
+        <!-- STEP 5 -->
+        <div class="pipeline-step bg-brand-card/70 border border-brand-border rounded-2xl p-4 flex flex-col justify-between transition duration-200 hover:border-brand-emerald">
+          <div>
+            <div class="pipeline-number w-8 h-8 rounded-lg bg-slate-800 text-brand-emerald font-mono font-bold flex items-center justify-center text-xs mb-3 transition">05</div>
+            <h4 class="text-white font-bold text-sm mb-1">Edição Determinística</h4>
+            <div class="text-[10px] font-mono text-brand-emerald mb-2">CLI: capcut-cli</div>
+            <p class="text-slate-400 text-xs leading-relaxed">Automação monta o projeto do CapCut aplicando cortes no mapa de beats, legendas abaixo do queixo e camadas de b-roll.</p>
+          </div>
+          <div class="mt-4 pt-2 border-t border-slate-800/80 text-[10px] font-mono text-slate-500">OUTPUT: READY REEL</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HERO SECTION PRINCIPAL -->
+  <section class="max-w-5xl mx-auto px-4 pt-4 pb-16 text-center">
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-surface border border-brand-border text-brand-glow text-xs font-semibold tracking-wider uppercase mb-6 glow-badge">
+      <span class="w-1.5 h-1.5 rounded-full bg-brand-emerald animate-pulse"></span>
+      CRIAÇÃO COM IA · MONTAGEM EM CÓDIGO · DISTRIBUIÇÃO EM MASSA
+    </div>
+    
+    <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.15] max-w-4xl mx-auto mb-6">
+      O Kit Definitivo Para Gerar <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-emerald via-teal-300 to-cyan-400 neon-text">Vídeos Que Viralizam</span> e Atrair Clientes Internacionais.
+    </h1>
+
+    <p class="text-base sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+      Aprenda a orquestrar os melhores motores de IA (Google Flow, Gemini Omni Flash 1.1, Sora, HeyGen, ComfyUI), montar com código e cortes por BPM (Remotion, OpenMontage, CapCut CLI) e prospectar clientes no Facebook com agentes autônomos sem gastar nada com anúncios.
+    </p>
+
+    <!-- CARROSSEL INFINITO DE FERRAMENTAS COM ÍCONES ORIGINAIS -->
+    <div class="w-full overflow-hidden py-4 border-y border-brand-border/60 bg-brand-surface/30 relative mb-12">
+      <div class="flex space-x-8 animate-marquee whitespace-nowrap items-center">
+        
+        <!-- ITEM CLAUDE -->
+        <div class="inline-flex items-center space-x-2 text-slate-300 font-mono text-sm px-4 py-2 rounded-xl bg-brand-surface border border-brand-border">
+          <img src="/icons/claude.svg" class="w-5 h-5 rounded">
+          <span class="font-bold text-white">Claude Code</span>
+        </div>
+        <!-- ITEM GEMINI -->
+        <div class="inline-flex items-center space-x-2 text-slate-300 font-mono text-sm px-4 py-2 rounded-xl bg-brand-surface border border-brand-border">
+          <img src="/icons/gemini.svg" class="w-5 h-5 rounded">
+          <span class="font-bold text-white">Gemini Flow 1.1</span>
+        </div>
+        <!-- ITEM CHATGPT -->
+        <div class="inline-flex items-center space-x-2 text-slate-300 font-mono text-sm px-4 py-2 rounded-xl bg-brand-surface border border-brand-border">
+          <img src="/icons/chatgpt.svg" class="w-5 h-5 rounded">
+          <span class="font-bold text-white">ChatGPT Sora</span>
+        </div>
+        <!-- ITEM INSTAGRAM OFICIAL -->
+        <div class="inline-flex items-center space-x-2 text-slate-300 font-mono text-sm px-4 py-2 rounded-xl bg-brand-surface border border-brand-border">
+          <img src="/instagram-logo.jpg" class="w-5 h-5 rounded-md object-cover">
+          <span class="font-bold text-white">Instagram API</span>
+        </div>
+        <!-- ITEM META -->
+        <div class="inline-flex items-center space-x-2 text-slate-300 font-mono text-sm px-4 py-2 rounded-xl bg-brand-surface border border-brand-border">
+          <img src="/icons/meta.svg" class="w-5 h-5 rounded">
+          <span class="font-bold text-white">Meta MCPs</span>
+        </div>
+        <!-- ITEM GOHIGHLEVEL -->
+        <div class="inline-flex items-center space-x-2 text-slate-300 font-mono text-sm px-4 py-2 rounded-xl bg-brand-surface border border-brand-border">
+          <img src="/icons/gohighlevel.svg" class="w-5 h-5 rounded">
+          <span class="font-bold text-white">GoHighLevel</span>
+        </div>
+        <!-- ITEM COMFYUI -->
+        <div class="inline-flex items-center space-x-2 text-slate-300 font-mono text-sm px-4 py-2 rounded-xl bg-brand-surface border border-brand-border">
+          <img src="/icons/comfyui.svg" class="w-5 h-5 rounded">
+          <span class="font-bold text-white">Comfy Cloud</span>
+        </div>
+        <!-- ITEM HEYGEN -->
+        <div class="inline-flex items-center space-x-2 text-slate-300 font-mono text-sm px-4 py-2 rounded-xl bg-brand-surface border border-brand-border">
+          <img src="/icons/heygen.svg" class="w-5 h-5 rounded">
+          <span class="font-bold text-white">HeyGen Avatar</span>
+        </div>
+        <!-- ITEM REMOTION -->
+        <div class="inline-flex items-center space-x-2 text-slate-300 font-mono text-sm px-4 py-2 rounded-xl bg-brand-surface border border-brand-border">
+          <img src="/icons/remotion.svg" class="w-5 h-5 rounded">
+          <span class="font-bold text-white">Remotion Engine</span>
+        </div>
+        <!-- ITEM ASSEMBLYAI -->
+        <div class="inline-flex items-center space-x-2 text-slate-300 font-mono text-sm px-4 py-2 rounded-xl bg-brand-surface border border-brand-border">
+          <img src="/icons/assemblyai.svg" class="w-5 h-5 rounded">
+          <span class="font-bold text-white">AssemblyAI</span>
+        </div>
+
+        <!-- REPETIÇÃO PARA SCROLL INFINITO PERFEITO -->
+        <div class="inline-flex items-center space-x-2 text-slate-300 font-mono text-sm px-4 py-2 rounded-xl bg-brand-surface border border-brand-border">
+          <img src="/icons/claude.svg" class="w-5 h-5 rounded">
+          <span class="font-bold text-white">Claude Code</span>
+        </div>
+        <div class="inline-flex items-center space-x-2 text-slate-300 font-mono text-sm px-4 py-2 rounded-xl bg-brand-surface border border-brand-border">
+          <img src="/icons/gemini.svg" class="w-5 h-5 rounded">
+          <span class="font-bold text-white">Gemini Flow 1.1</span>
+        </div>
+        <div class="inline-flex items-center space-x-2 text-slate-300 font-mono text-sm px-4 py-2 rounded-xl bg-brand-surface border border-brand-border">
+          <img src="/instagram-logo.jpg" class="w-5 h-5 rounded-md object-cover">
+          <span class="font-bold text-white">Instagram API</span>
+        </div>
+        <div class="inline-flex items-center space-x-2 text-slate-300 font-mono text-sm px-4 py-2 rounded-xl bg-brand-surface border border-brand-border">
+          <img src="/icons/meta.svg" class="w-5 h-5 rounded">
+          <span class="font-bold text-white">Meta MCPs</span>
+        </div>
+        <div class="inline-flex items-center space-x-2 text-slate-300 font-mono text-sm px-4 py-2 rounded-xl bg-brand-surface border border-brand-border">
+          <img src="/icons/gohighlevel.svg" class="w-5 h-5 rounded">
+          <span class="font-bold text-white">GoHighLevel</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ELEMENTO VISUAL 2: SIMULADOR VISUAL DE CRM DISTRIBUINDO E RESPONDENDO EM MASSA -->
+  <section id="crm-engine" class="max-w-7xl mx-auto px-4 py-12">
+    <div class="bg-brand-card/90 border border-brand-border rounded-2xl p-6 sm:p-8 glow-border relative overflow-hidden backdrop-blur-md">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-brand-border/60 pb-4 mb-6">
+        <div class="flex items-center space-x-3">
+          <span class="flex h-3 w-3 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-emerald opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-emerald"></span>
+          </span>
+          <span class="text-xs font-mono font-bold text-white uppercase tracking-wider">
+            [DISTRIBUTION ENGINE] CRM GOHIGHLEVEL + META CLOUD API DISPATCHER
+          </span>
+        </div>
+        <div class="flex items-center space-x-4 text-xs font-mono text-slate-400">
+          <span class="text-brand-glow">AUTO-RESPONDER LATENCY: 0.8s</span>
+          <span class="text-brand-emerald font-bold">STATUS: 100% HEALTHY</span>
+        </div>
+      </div>
+
+      <!-- REDE MULTICANAL DISTRIBUINDO AUTOMATICAMENTE -->
+      <div class="grid md:grid-cols-4 gap-4 text-xs font-mono mb-6">
+        <!-- INSTAGRAM -->
+        <div class="p-4 rounded-xl bg-brand-surface border border-brand-border flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center space-x-2">
+              <img src="/instagram-logo.jpg" class="w-5 h-5 rounded">
+              <span class="font-bold text-white">Instagram</span>
+            </div>
+            <span class="text-[10px] text-brand-emerald bg-brand-emerald/10 px-1.5 py-0.5 rounded">ACTIVE</span>
+          </div>
+          <p class="text-slate-400 text-[11px] mb-3">Gatilho de comentário "Clone" acionado. 3 leads contatados na DM agora.</p>
+          <div class="text-[10px] text-brand-glow font-bold">+490k Views Reel Synced</div>
+        </div>
+
+        <!-- FACEBOOK GROUPS -->
+        <div class="p-4 rounded-xl bg-brand-surface border border-brand-border flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center space-x-2">
+              <img src="/icons/meta.svg" class="w-5 h-5 rounded">
+              <span class="font-bold text-white">Facebook Groups</span>
+            </div>
+            <span class="text-[10px] text-brand-emerald bg-brand-emerald/10 px-1.5 py-0.5 rounded">SCRAPER 24/7</span>
+          </div>
+          <p class="text-slate-400 text-[11px] mb-3">Agente "Leonardo" respondendo posts técnicos e conectando clientes.</p>
+          <div class="text-[10px] text-brand-glow font-bold">bash Custo por Lead</div>
+        </div>
+
+        <!-- WHATSAPP CLOUD API -->
+        <div class="p-4 rounded-xl bg-brand-surface border border-brand-border flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center space-x-2">
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+              <span class="font-bold text-white">WhatsApp VIP</span>
+            </div>
+            <span class="text-[10px] text-brand-emerald bg-brand-emerald/10 px-1.5 py-0.5 rounded">CONNECTED</span>
+          </div>
+          <p class="text-slate-400 text-[11px] mb-3">Entrega instantânea de links de onboarding e avisos da mentoria.</p>
+          <div class="text-[10px] text-brand-glow font-bold">Taxa de Abertura: 98%</div>
+        </div>
+
+        <!-- GOHIGHLEVEL CENTRAL -->
+        <div class="p-4 rounded-xl bg-brand-surface border border-brand-border flex flex-col justify-between">
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center space-x-2">
+              <img src="/icons/gohighlevel.svg" class="w-5 h-5 rounded">
+              <span class="font-bold text-white">GHL Master</span>
+            </div>
+            <span class="text-[10px] text-brand-emerald bg-brand-emerald/10 px-1.5 py-0.5 rounded">SYNCED</span>
+          </div>
+          <p class="text-slate-400 text-[11px] mb-3">Keepalive contínuo mantendo o token Firebase renovado a cada 20 min.</p>
+          <div class="text-[10px] text-brand-glow font-bold">Location: Automatrix</div>
+        </div>
+      </div>
+
+      <!-- SIMULADOR DE CHAT / RESPOSTA AUTOMÁTICA EM TEMPO REAL -->
+      <div class="bg-black/60 rounded-xl border border-slate-800 p-4 font-mono text-xs max-w-3xl mx-auto">
+        <div class="text-slate-400 border-b border-slate-800 pb-2 mb-3 flex items-center justify-between">
+          <span>SIMULAÇÃO: CONVERSA INBOUND NO INSTAGRAM DM</span>
+          <span class="text-brand-emerald">TEMPO DE RESPOSTA: 0.8s</span>
+        </div>
+        <div class="space-y-3">
+          <div class="flex items-start space-x-2.5">
+            <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 font-bold text-[10px]">LEAD</span>
+            <div class="bg-slate-900 p-2.5 rounded-lg border border-slate-800 text-slate-300">
+              Comentei "Clone" no seu vídeo sobre o avatar HeyGen. Tem o link do repositório?
+            </div>
+          </div>
+          <div class="flex items-start space-x-2.5 flex-row-reverse space-x-reverse">
+            <span class="px-2 py-0.5 rounded bg-brand-emerald text-black font-bold text-[10px]">AGENTE</span>
+            <div class="bg-brand-surface p-2.5 rounded-lg border border-brand-border text-brand-glow">
+              Fala! O repositório oficial com a separação de voz Demucs e automação CapCut tá liberado no Vault: [Acessar Link Oficial].
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO REELS VIRAIS EM ALTA QUALIDADE (9:16) -->
+  <section id="prova" class="max-w-7xl mx-auto px-4 py-16 border-t border-brand-border/60">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="text-xs font-mono text-brand-glow uppercase tracking-widest">PROVA REAL DE RETENÇÃO</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">
+        Os Reels Virais em Proporção Nativa (9:16)
+      </h2>
+      <p class="text-slate-400 text-sm sm:text-base mt-2">
+        Toque em qualquer vídeo para assistir direto no Instagram original do @automatrix.ia:
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      
+      <!-- REEL 1: 490K VIEWS -->
+      <a href="https://www.instagram.com/p/Dc2WEfYiTMS/" target="_blank" class="group block bg-brand-card rounded-2xl border border-brand-border hover:border-brand-emerald transition duration-300 overflow-hidden transform hover:-translate-y-1.5 shadow-2xl">
+        <div class="relative aspect-[9/16] bg-slate-950 overflow-hidden">
+          <img src="/portrait-reel-490k.jpg" alt="Reel 490K Views" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute top-3 right-3 bg-red-600/90 text-white font-mono font-bold text-xs px-2.5 py-1 rounded-full flex items-center gap-1 shadow-md">
+            <i class="fa-brands fa-instagram"></i> 490K VIEWS
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent flex flex-col justify-end p-5">
+            <span class="text-xs font-mono text-brand-emerald uppercase tracking-wider mb-1">Big Tech IA & Releases</span>
+            <h4 class="text-white font-bold text-base leading-snug group-hover:text-brand-glow transition">
+              "GPU optional. Patience required." — O setup definitivo para testar IA
+            </h4>
+            <div class="mt-3 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400 font-mono">
+              <span>12.3k Likes · 5.2k Comments</span>
+              <span class="text-brand-glow font-bold">Assistir &rarr;</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- REEL 2: 15.8K INTERAÇÕES -->
+      <a href="https://www.instagram.com/p/Dcz_HkoqcKz/" target="_blank" class="group block bg-brand-card rounded-2xl border border-brand-border hover:border-brand-emerald transition duration-300 overflow-hidden transform hover:-translate-y-1.5 shadow-2xl">
+        <div class="relative aspect-[9/16] bg-slate-950 overflow-hidden">
+          <img src="/portrait-reel-results.jpg" alt="Reel Resultados" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute top-3 right-3 bg-red-600/90 text-white font-mono font-bold text-xs px-2.5 py-1 rounded-full flex items-center gap-1 shadow-md">
+            <i class="fa-brands fa-instagram"></i> +2.1K SEGUIDORES
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent flex flex-col justify-end p-5">
+            <span class="text-xs font-mono text-brand-emerald uppercase tracking-wider mb-1">Open-Source Repositories</span>
+            <h4 class="text-white font-bold text-base leading-snug group-hover:text-brand-glow transition">
+              Como um único repositório gerou 15.800 interações diretas e centenas de leads
+            </h4>
+            <div class="mt-3 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400 font-mono">
+              <span>286.3k Views · 15.8k Engaged</span>
+              <span class="text-brand-glow font-bold">Assistir &rarr;</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- REEL 3: MULTICANAL RETENÇÃO 85% -->
+      <a href="https://www.instagram.com/p/Db3Z9oDjiqN/" target="_blank" class="group block bg-brand-card rounded-2xl border border-brand-border hover:border-brand-emerald transition duration-300 overflow-hidden transform hover:-translate-y-1.5 shadow-2xl">
+        <div class="relative aspect-[9/16] bg-slate-950 overflow-hidden">
+          <img src="/portrait-content-operations.jpg" alt="Operação de Conteúdo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute top-3 right-3 bg-brand-emerald text-black font-mono font-bold text-xs px-2.5 py-1 rounded-full flex items-center gap-1 shadow-md">
+            <i class="fa-brands fa-instagram"></i> 85% RETENÇÃO
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent flex flex-col justify-end p-5">
+            <span class="text-xs font-mono text-brand-emerald uppercase tracking-wider mb-1">Viral Flow Architecture</span>
+            <h4 class="text-white font-bold text-base leading-snug group-hover:text-brand-glow transition">
+              Engenharia reversa de cortes, hook visual dinâmico e sound design cirúrgico
+            </h4>
+            <div class="mt-3 pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400 font-mono">
+              <span>Vertical 9:16 · Multi-Platform</span>
+              <span class="text-brand-glow font-bold">Assistir &rarr;</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO MÉTRICAS AUDITADAS COM PRINTS REAIS -->
+  <section id="metricas" class="max-w-7xl mx-auto px-4 py-16 border-t border-brand-border/60">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="text-xs font-mono text-brand-glow uppercase tracking-widest">TRANSPARÊNCIA TOTAL</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">
+        Métricas Reais Extraídas do Instagram
+      </h2>
+      <p class="text-slate-400 text-sm sm:text-base mt-2">
+        Confira os prints reais da conta oficial @automatrix.ia comprovando alcance e engajamento:
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-brand-surface rounded-2xl border border-brand-border p-4 shadow-xl">
+        <img src="/dashboard-28days-1.2m.png" alt="Dashboard 1.2M" class="w-full rounded-xl mb-3 shadow-lg border border-slate-800">
+        <span class="text-xs font-mono text-brand-emerald font-bold block">DASHBOARD PROFISSIONAL</span>
+        <h4 class="text-white font-bold text-base mt-1">1.2M Visualizações (+422%)</h4>
+        <p class="text-xs text-slate-400 mt-1">80.640 contas com engajamento (+776%) e 7.922 novos seguidores no período de 28 dias.</p>
+      </div>
+
+      <div class="bg-brand-surface rounded-2xl border border-brand-border p-4 shadow-xl">
+        <img src="/insights-30days-1.6m.png" alt="Insights 1.6M" class="w-full rounded-xl mb-3 shadow-lg border border-slate-800">
+        <span class="text-xs font-mono text-brand-glow font-bold block">ALCANCE TOTAL DE CONTEÚDO</span>
+        <h4 class="text-white font-bold text-base mt-1">1.626.683 Visualizações nos Reels</h4>
+        <p class="text-xs text-slate-400 mt-1">53.512 contas alcançadas de não-seguidores gerando tráfego qualificado contínuo.</p>
+      </div>
+
+      <div class="bg-brand-surface rounded-2xl border border-brand-border p-4 shadow-xl">
+        <img src="/top-reels-592k.png" alt="Top Reels 592K" class="w-full rounded-xl mb-3 shadow-lg border border-slate-800">
+        <span class="text-xs font-mono text-brand-emerald font-bold block">TOP PERFORMING REEL</span>
+        <h4 class="text-white font-bold text-base mt-1">592.400 Views (GPU Optional)</h4>
+        <p class="text-xs text-slate-400 mt-1">12.3k curtidas, 5.2k comentários e 9.0k salvamentos em um único post técnico.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- O MOTOR DE CLIENTES GRINGOS: FACEBOOK SCRAPER AGENTS -->
+  <section id="gringa-engine" class="max-w-7xl mx-auto px-4 py-16 border-t border-brand-border/60">
+    <div class="bg-gradient-to-br from-brand-surface via-brand-card to-brand-surface rounded-3xl border border-brand-border p-8 sm:p-12 relative overflow-hidden">
+      <div class="max-w-4xl">
+        <span class="text-xs font-mono text-brand-glow uppercase tracking-widest">PROSPECÇÃO EM MASSA COM CUSTO bash</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">
+          Como Conquistei Clientes Gringos com Agentes no Facebook
+        </h2>
+        <p class="text-slate-300 text-sm sm:text-base mt-4 leading-relaxed">
+          A maioria queima rios de dinheiro em anúncios frios. Nós construímos **agentes autônomos que monitoram grupos estratégicos do Facebook** (como validado no projeto de Alessandro Gatti / Operation 60K e Chris Lamm / MortgageOne).
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-4 my-8 text-xs text-slate-300 font-mono">
+          <div class="p-4 rounded-xl bg-brand-surface/90 border border-brand-border">
+            <strong class="text-brand-glow block mb-1 text-sm">1. Monitoramento Cirúrgico</strong>
+            O agente escuta salas onde empresários e criadores pedem soluções técnicas reais.
+          </div>
+          <div class="p-4 rounded-xl bg-brand-surface/90 border border-brand-border">
+            <strong class="text-brand-emerald block mb-1 text-sm">2. Resposta de Alta Autoridade</strong>
+            Responde com profundidade técnica real, sem spam e sem pitch de vendas agressivo.
+          </div>
+          <div class="p-4 rounded-xl bg-brand-surface/90 border border-brand-border">
+            <strong class="text-brand-emerald block mb-1 text-sm">3. Conexão Natural na DM</strong>
+            O comentário atrai o lead para o chat privado, fechando reuniões de 20 min com facilidade.
+          </div>
+          <div class="p-4 rounded-xl bg-brand-surface/90 border border-brand-border">
+            <strong class="text-brand-glow block mb-1 text-sm">4. Escala Contínua 24/7</strong>
+            Opera em dezenas de grupos simultaneamente, substituindo um time de SDRs com custo bash.
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-900/90 border border-brand-emerald/40 flex items-center justify-between flex-wrap gap-4">
+          <div>
+            <span class="text-xs font-mono text-brand-emerald font-bold uppercase block">DISPONÍVEL COMO UPSELL NO CHECKOUT</span>
+            <span class="text-sm text-white font-medium">Repositório dos Agentes de Facebook + Tutoriais Completos de Setup</span>
+          </div>
+          <a href="https://buy.stripe.com/3cIcN48tigWc0QEfzG0Ny0j" target="_blank" class="bg-brand-emerald hover:bg-brand-accent text-slate-950 font-bold px-5 py-2.5 rounded-xl text-xs transition shadow-lg shadow-brand-emerald/20">
+            Adicionar por apenas 7 &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIAGNÓSTICO / QUIZ INTERATIVO (RECOMENDAÇÃO AUTOMÁTICA DE TIER) -->
+  <section id="diagnostico" class="py-16 bg-gradient-to-b from-[#030b0d] via-brand-surface to-[#030b0d] border-y border-brand-border">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <span class="text-xs font-mono text-brand-glow uppercase tracking-widest">DIAGNÓSTICO PERSONALIZADO</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">
+          Qual o Nível Ideal para o Seu Momento?
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">
+          Responda 3 perguntas rápidas para descobrir se você precisa apenas do Vault ou de acompanhamento ao vivo.
+        </p>
+      </div>
+
+      <div class="bg-brand-card/80 border border-brand-border rounded-2xl p-6 sm:p-8 backdrop-blur-sm shadow-2xl" id="quiz-box">
+        
+        <!-- ETAPA 1 -->
+        <div id="quiz-step-1" class="space-y-4">
+          <span class="text-xs font-mono text-brand-emerald">PERGUNTA 1 DE 3</span>
+          <h3 class="text-lg sm:text-xl font-bold text-white">
+            Qual é o seu principal objetivo com IA nas redes sociais agora?
+          </h3>
+          <div class="space-y-3 pt-2">
+            <button onclick="answerQuiz(1, 'vault')" class="w-full text-left p-4 rounded-xl border border-brand-border bg-brand-surface hover:border-brand-emerald transition flex items-center justify-between group">
+              <span class="text-sm text-slate-200 group-hover:text-white font-medium">
+                Quero os códigos, repositórios, skills e templates para implementar no meu próprio ritmo.
+              </span>
+              <span class="text-brand-glow text-sm font-bold opacity-0 group-hover:opacity-100 transition">Selecionar &rarr;</span>
+            </button>
+            <button onclick="answerQuiz(1, 'group')" class="w-full text-left p-4 rounded-xl border border-brand-border bg-brand-surface hover:border-brand-emerald transition flex items-center justify-between group">
+              <span class="text-sm text-slate-200 group-hover:text-white font-medium">
+                Quero encontros ao vivo em grupo 3x na semana para destravar produção e tirar dúvidas na tela.
+              </span>
+              <span class="text-brand-glow text-sm font-bold opacity-0 group-hover:opacity-100 transition">Selecionar &rarr;</span>
+            </button>
+            <button onclick="answerQuiz(1, 'mentorship')" class="w-full text-left p-4 rounded-xl border border-brand-border bg-brand-surface hover:border-brand-emerald transition flex items-center justify-between group">
+              <span class="text-sm text-slate-200 group-hover:text-white font-medium">
+                Quero mentoria individual 1:1 construindo e auditando a operação inteira diretamente comigo.
+              </span>
+              <span class="text-brand-glow text-sm font-bold opacity-0 group-hover:opacity-100 transition">Selecionar &rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ETAPA 2 -->
+        <div id="quiz-step-2" class="space-y-4 hidden">
+          <span class="text-xs font-mono text-brand-emerald">PERGUNTA 2 DE 3</span>
+          <h3 class="text-lg sm:text-xl font-bold text-white">
+            Qual seu formato favorito de comunidade e suporte diário?
+          </h3>
+          <div class="space-y-3 pt-2">
+            <button onclick="answerQuiz(2, 'low')" class="w-full text-left p-4 rounded-xl border border-brand-border bg-brand-surface hover:border-brand-emerald transition flex items-center justify-between group">
+              <span class="text-sm text-slate-200 group-hover:text-white font-medium">
+                WhatsApp no bolso (respostas rápidas) + Grupo Privado no Facebook para materiais e posts.
+              </span>
+              <span class="text-brand-glow text-sm font-bold opacity-0 group-hover:opacity-100 transition">Selecionar &rarr;</span>
+            </button>
+            <button onclick="answerQuiz(2, 'mid')" class="w-full text-left p-4 rounded-xl border border-brand-border bg-brand-surface hover:border-brand-emerald transition flex items-center justify-between group">
+              <span class="text-sm text-slate-200 group-hover:text-white font-medium">
+                WhatsApp VIP + Chamadas de Mentoria ao vivo compartilhando tela e revendo projetos.
+              </span>
+              <span class="text-brand-glow text-sm font-bold opacity-0 group-hover:opacity-100 transition">Selecionar &rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ETAPA 3 -->
+        <div id="quiz-step-3" class="space-y-4 hidden">
+          <span class="text-xs font-mono text-brand-emerald">PERGUNTA 3 DE 3</span>
+          <h3 class="text-lg sm:text-xl font-bold text-white">
+            Você planeja atender clientes internacionais (gringa) ou monetizar no Brasil?
+          </h3>
+          <div class="space-y-3 pt-2">
+            <button onclick="answerQuiz(3, 'direct')" class="w-full text-left p-4 rounded-xl border border-brand-border bg-brand-surface hover:border-brand-emerald transition flex items-center justify-between group">
+              <span class="text-sm text-slate-200 group-hover:text-white font-medium">
+                Quero ganhar em dólar (USD) produzindo e gerenciando redes para clientes gringos.
+              </span>
+              <span class="text-brand-glow text-sm font-bold opacity-0 group-hover:opacity-100 transition">Selecionar &rarr;</span>
+            </button>
+            <button onclick="answerQuiz(3, 'coaching')" class="w-full text-left p-4 rounded-xl border border-brand-border bg-brand-surface hover:border-brand-emerald transition flex items-center justify-between group">
+              <span class="text-sm text-slate-200 group-hover:text-white font-medium">
+                Quero escalar meus próprios perfis locais e marcas próprias primeiro.
+              </span>
+              <span class="text-brand-glow text-sm font-bold opacity-0 group-hover:opacity-100 transition">Selecionar &rarr;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- RESULTADO RECOMENDADO -->
+        <div id="quiz-result" class="hidden text-center space-y-6 py-4">
+          <div class="w-14 h-14 rounded-full bg-brand-emerald/20 border border-brand-emerald flex items-center justify-center mx-auto text-brand-accent text-2xl">
+            ✓
+          </div>
+          <div>
+            <span class="text-xs font-mono text-brand-glow uppercase tracking-wider">RECOMENDAÇÃO BASEADA NO SEU PERFIL:</span>
+            <h3 id="quiz-rec-title" class="text-2xl font-extrabold text-white mt-1">Plano Recomendado</h3>
+            <p id="quiz-rec-desc" class="text-slate-300 text-sm max-w-md mx-auto mt-2"></p>
+          </div>
+          <div class="pt-2">
+            <a id="quiz-rec-btn" href="#" class="inline-block bg-brand-emerald hover:bg-brand-accent text-slate-950 font-bold px-8 py-3.5 rounded-xl text-base shadow-lg shadow-brand-emerald/30 transition transform hover:-translate-y-0.5">
+              Ir para Checkout Seguro
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS E TIERS DE PREÇO COM LINKS VERIFICADOS -->
+  <section id="precos" class="max-w-7xl mx-auto px-4 py-20">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs font-mono text-brand-glow uppercase tracking-widest">ACESSO & PAGAMENTO SEGURO</span>
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2">
+        Escolha o Seu Nível de Entrada
+      </h2>
+      <p class="text-slate-400 mt-3 text-base">
+        Pagamento internacional processado com segurança pela Stripe. Liberação imediata dos acessos.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
+      
+      <!-- TIER 1 -->
+      <div class="bg-brand-card rounded-2xl border border-brand-border p-8 flex flex-col justify-between relative hover:border-slate-500 transition">
+        <div>
+          <div class="inline-block px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold uppercase mb-4">
+            COMUNIDADE & VAULT
+          </div>
+          <h3 class="text-2xl font-bold text-white">Tier 1: Vault Member</h3>
+          <p class="text-slate-400 text-sm mt-2">Acesso total ao Vault de repositórios, Grupo VIP WhatsApp e Grupo Privado Facebook.</p>
+          
+          <div class="my-6 pb-6 border-b border-brand-border">
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl sm:text-5xl font-extrabold text-white">0</span>
+              <span class="text-slate-400 text-sm">/ mês</span>
+            </div>
+            <div class="text-xs text-brand-emerald mt-1 font-mono">Cancele quando quiser · Sem fidelidade</div>
+          </div>
+
+          <ul class="space-y-3 text-sm text-slate-300 mb-8">
+            <li class="flex items-start gap-2.5"><span class="text-brand-emerald font-bold">✓</span> Acesso completo a todo o Vault de repositórios e skills.</li>
+            <li class="flex items-start gap-2.5"><span class="text-brand-emerald font-bold">✓</span> Grupo Privado no Facebook (Social Media AI GigaKit).</li>
+            <li class="flex items-start gap-2.5"><span class="text-brand-emerald font-bold">✓</span> Grupo VIP no WhatsApp para suporte e avisos.</li>
+            <li class="flex items-start gap-2.5"><span class="text-brand-emerald font-bold">✓</span> Workflows prontos de GHL e automações de Instagram DM.</li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <a href="https://buy.stripe.com/8x2cN410Q35mczm2MU0Ny0f" class="w-full text-center bg-brand-emerald hover:bg-brand-accent text-slate-950 font-bold py-3.5 px-6 rounded-xl transition duration-200 block shadow-md">
+            Entrar no Vault (0/mês) &rarr;
+          </a>
+
+          <!-- UPSELLS DO TIER 1 -->
+          <div class="p-3 rounded-xl bg-brand-surface/90 border border-brand-border text-left space-y-2 mt-4">
+            <span class="text-[11px] font-mono font-bold text-brand-glow uppercase block">⚡ Opcionais de Aceleração (Upsells):</span>
+            
+            <a href="https://buy.stripe.com/4gM7sKdNCfS81UI3QY0Ny0i" target="_blank" class="block p-2 rounded-lg bg-slate-900/80 hover:border-brand-emerald border border-slate-700/60 text-xs transition">
+              <div class="flex justify-between font-bold text-slate-200">
+                <span>+ Master Arsenal (Skills & MCPs Pack)</span>
+                <span class="text-brand-emerald">7</span>
+              </div>
+              <span class="text-[10px] text-slate-400 block mt-0.5">Todas as skills de Claude Code, Gemini CLI e MCPs da Meta.</span>
+            </a>
+
+            <a href="https://buy.stripe.com/3cIcN48tigWc0QEfzG0Ny0j" target="_blank" class="block p-2 rounded-lg bg-slate-900/80 hover:border-brand-emerald border border-slate-700/60 text-xs transition">
+              <div class="flex justify-between font-bold text-slate-200">
+                <span>+ Facebook Free Lead Scraper Agents</span>
+                <span class="text-brand-emerald">7</span>
+              </div>
+              <span class="text-[10px] text-slate-400 block mt-0.5">Agentes de extração gratuita de leads do Facebook + tutoriais.</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- TIER 2 (DESTAQUE / RECOMENDADO) -->
+      <div class="bg-gradient-to-b from-brand-surface via-brand-card to-brand-surface rounded-2xl border-2 border-brand-emerald p-8 flex flex-col justify-between relative glow-border scale-105 z-10">
+        <div class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-brand-emerald text-slate-950 text-xs font-extrabold px-4 py-1 rounded-full uppercase tracking-wider shadow-md">
+          MAIS POPULAR · MELHOR CUSTO-BENEFÍCIO
+        </div>
+        
+        <div>
+          <div class="inline-block px-3 py-1 rounded-full bg-brand-surface border border-brand-glow text-brand-glow text-xs font-semibold uppercase mb-4">
+            MENTORIA COLETIVA + VAULT
+          </div>
+          <h3 class="text-2xl font-bold text-white">Tier 2: Acelerador Pro</h3>
+          <p class="text-slate-400 text-sm mt-2">Para quem quer implementação rápida com 3 encontros semanais ao vivo para destravar tudo.</p>
+          
+          <div class="my-6 pb-6 border-b border-brand-border">
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl sm:text-5xl font-extrabold text-white">0</span>
+              <span class="text-slate-400 text-sm">/ mês</span>
+            </div>
+            <div class="text-xs text-brand-glow mt-1 font-mono">Equivale a apenas  dólares por dia</div>
+          </div>
+
+          <ul class="space-y-3 text-sm text-slate-200 mb-8">
+            <li class="flex items-start gap-2.5"><span class="text-brand-emerald font-bold">✓</span> <strong>TUDO DO TIER 1 INCLUSO</strong> (Vault + Facebook + WhatsApp).</li>
+            <li class="flex items-start gap-2.5"><span class="text-brand-emerald font-bold">✓</span> <strong>3 Sessões de Mentoria Coletiva por Semana</strong>.</li>
+            <li class="flex items-start gap-2.5"><span class="text-brand-emerald font-bold">✓</span> Hotseats e análise de telas dos seus projetos e anúncios.</li>
+            <li class="flex items-start gap-2.5"><span class="text-brand-emerald font-bold">✓</span> Prioridade de atendimento no suporte do WhatsApp.</li>
+            <li class="flex items-start gap-2.5"><span class="text-brand-emerald font-bold">✓</span> Gravação de todas as chamadas na íntegra.</li>
+          </ul>
+        </div>
+
+        <a href="https://buy.stripe.com/dRmaEW24U49qczmfzG0Ny0g" class="w-full text-center bg-brand-emerald hover:bg-brand-accent text-slate-950 font-extrabold py-4 px-6 rounded-xl transition duration-200 block shadow-xl shadow-brand-emerald/30 transform hover:-translate-y-0.5">
+          Quero o Acelerador (0/mês) &rarr;
+        </a>
+      </div>
+
+      <!-- TIER 3 -->
+      <div class="bg-brand-card rounded-2xl border border-brand-border p-8 flex flex-col justify-between relative hover:border-slate-500 transition">
+        <div>
+          <div class="inline-block px-3 py-1 rounded-full bg-amber-950/80 border border-amber-600/50 text-amber-300 text-xs font-semibold uppercase mb-4">
+            APENAS 5 VAGAS EXCLUSIVAS
+          </div>
+          <h3 class="text-2xl font-bold text-white">Tier 3: Mentoria 1:1 VIP</h3>
+          <p class="text-slate-400 text-sm mt-2">Acompanhamento individual direto com Lucas durante 3 meses para construir sua operação.</p>
+          
+          <div class="my-6 pb-6 border-b border-brand-border">
+            <div class="flex items-baseline gap-2">
+              <span class="text-4xl sm:text-5xl font-extrabold text-white">.000</span>
+              <span class="text-slate-400 text-sm">/ 3 meses</span>
+            </div>
+            <div class="text-xs text-amber-300 mt-1 font-mono">Acompanhamento intensivo e personalizado</div>
+          </div>
+
+          <ul class="space-y-3 text-sm text-slate-300 mb-8">
+            <li class="flex items-start gap-2.5"><span class="text-brand-emerald font-bold">✓</span> <strong>TUDO DOS TIERS 1 E 2 INCLUSOS</strong>.</li>
+            <li class="flex items-start gap-2.5"><span class="text-brand-emerald font-bold">✓</span> <strong>2 Sessões Individuais 1:1 por semana</strong> durante 3 meses (24 chamadas).</li>
+            <li class="flex items-start gap-2.5"><span class="text-brand-emerald font-bold">✓</span> Canal direto e prioritário no WhatsApp pessoal do Lucas.</li>
+            <li class="flex items-start gap-2.5"><span class="text-brand-emerald font-bold">✓</span> Auditoria e configuração direta da sua conta GHL e Meta Ads.</li>
+            <li class="flex items-start gap-2.5"><span class="text-brand-emerald font-bold">✓</span> Implementação assistida de pipelines de vídeo no seu servidor.</li>
+          </ul>
+        </div>
+
+        <a href="https://buy.stripe.com/aFa6oGdNCeO47f2dry0Ny0h" class="w-full text-center bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold py-3.5 px-6 rounded-xl transition duration-200 block shadow-md">
+          Garantir Vaga Individual (.000) &rarr;
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-brand-border py-12 text-center text-xs text-slate-500 font-mono">
+    <div class="flex items-center justify-center space-x-2 mb-3">
+      <img src="/automatrix-logo.svg" alt="Automatrix IA" class="w-5 h-5">
+      <span class="text-slate-300 font-bold">Automatrix IA</span>
+    </div>
+    <p>© 2026 Automatrix IA. Todos os direitos reservados. Operado por Lucas Felipe Nogueira Alves.</p>
+    <p class="mt-2">Pagamentos internacionais criptografados processados via Stripe.</p>
+  </footer>
+
+  <!-- SCRIPT DO QUIZ INTERATIVO -->
+  <script>
+    let isPt = true;
+    let quizAnswers = {};
+
+    function answerQuiz(step, answer) {
+      quizAnswers[step] = answer;
+      document.getElementById('quiz-step-' + step).classList.add('hidden');
+
+      if (step === 1) {
+        document.getElementById('quiz-step-2').classList.remove('hidden');
+      } else if (step === 2) {
+        document.getElementById('quiz-step-3').classList.remove('hidden');
+      } else if (step === 3) {
+        showQuizResult();
+      }
+    }
+
+    function showQuizResult() {
+      document.getElementById('quiz-result').classList.remove('hidden');
+      
+      const title = document.getElementById('quiz-rec-title');
+      const desc = document.getElementById('quiz-rec-desc');
+      const btn = document.getElementById('quiz-rec-btn');
+
+      if (quizAnswers[1] === 'mentorship') {
+        title.innerText = isPt ? 'Tier 3: Mentoria Individual 1:1 VIP' : 'Tier 3: 1:1 Private VIP Mentorship';
+        desc.innerText = isPt ? 'Você busca aceleração total com acompanhamento direto do Lucas por 3 meses para desenhar e rodar sua operação sem cometer erros.' : 'You want direct acceleration with Lucas for 3 months to build and run your AI video/CRM operations flawlessly.';
+        btn.href = 'https://buy.stripe.com/aFa6oGdNCeO47f2dry0Ny0h';
+        btn.innerText = isPt ? 'Garantir Vaga Individual (.000) →' : 'Secure 1:1 Seat (,000) →';
+      } else if (quizAnswers[1] === 'group' || quizAnswers[2] === 'mid') {
+        title.innerText = isPt ? 'Tier 2: Acelerador Pro (Mentoria Coletiva 3x/sem)' : 'Tier 2: Pro Accelerator (Group Calls 3x/week)';
+        desc.innerText = isPt ? 'O formato ideal para você destravar sua produção com encontros ao vivo em grupo e suporte próximo no WhatsApp.' : 'The ideal format to accelerate video generation with live group calls and dedicated WhatsApp support.';
+        btn.href = 'https://buy.stripe.com/dRmaEW24U49qczmfzG0Ny0g';
+        btn.innerText = isPt ? 'Acessar Acelerador Pro (0/mês) →' : 'Join Pro Accelerator (0/mo) →';
+      } else {
+        title.innerText = isPt ? 'Tier 1: Vault Member (0/mês)' : 'Tier 1: Vault Member (0/mo)';
+        desc.innerText = isPt ? 'Você tem autonomia para implementar os repositórios, skills e automações com suporte da comunidade no WhatsApp e Facebook.' : 'You want self-paced access to all codebases, repos, skills, and community support on WhatsApp and Facebook.';
+        btn.href = 'https://buy.stripe.com/8x2cN410Q35mczm2MU0Ny0f';
+        btn.innerText = isPt ? 'Desbloquear o Vault (0/mês) →' : 'Unlock the Vault (0/mo) →';
+      }
+    }
+  </script>
+
+</body>
+</html>
